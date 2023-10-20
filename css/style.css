@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Hind Siliguri", sans-serif;
+}
+/* Header */
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+#navbarPort .nav-item .nav-link {
+  color: white;
+  transition: all 0.5s;
+}
+#navbarPort .nav-item:hover .nav-link {
+  color: #35a22c;
+}
+#navbarPort .nav-item .nav-link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #35a22c;
+  display: block;
+  transition: all 0.5s;
+}
+#navbarPort .nav-item:hover .nav-link::after {
+  width: 100%;
+}
+/* 
+Carousel */
+.carouselPort .carousel-item {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.carouselPort .carousel-item:nth-child(1) {
+  background-image: url(../images/mountains.jpg);
+}
+.carouselPort .carousel-item:nth-child(2) {
+  background-image: url(../images/mountains-1.jpg);
+}
+.carouselPort .carousel-item:nth-child(3) {
+  background-image: url(../images/finland.jpg);
+}
+.carouselPort .img__thumb {
+  width: 150px;
+  margin: 0 auto;
+}
+.carouselPort .img__thumb img {
+  border-radius: 50%;
+}
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-indicators li {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+}
+.carousel-indicators .active {
+  background-color: #35a22c;
+}
+@media screen and (max-width: 575px) {
+  .project__content .card-body .card-title {
+    font-size: 1rem;
+  }
+}
+.project .tab-content .row .col-12 {
+  padding: 15px;
+}
+.project .tab-content .row .card {
+  border-radius: 20px;
+}
+.project__content .nav-pills .nav-link {
+  border: 1px solid black;
+  color: black;
+  margin: 0 10px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #35a22c;
+  color: white;
+  border: #35a22c;
+}
+.project__content .tab-content .row .card {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: none;
+  box-shadow: 0 0 0.4rem gray;
+  cursor: pointer;
+}
+.project__content .card .card-body {
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 0 0 1rem 1rem;
+  transition: all 0.5s;
+}
+.project__content .card .card-body h4 {
+  font-size: 1.2rem;
+}
+.project__content .card:hover .card-body {
+  border-color: #35a22c;
+  border-top-color: transparent;
+}
+@media screen and (max-width: 767px) {
+  .project__content .nav-pills .nav-link {
+    font-size: 1rem;
+  }
+}
